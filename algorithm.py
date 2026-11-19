@@ -47,3 +47,72 @@ def prime(s):
             return
 
 prime(s)
+
+
+# 6323 파이썬 프로그래밍 기초 파이썬의 기본 구조와 기초 문법
+# 함수 4
+n = 10
+lst = []
+
+def fibo(n):
+    if n == 1 or n == 2:
+        return 1
+    else:
+        return fibo(n - 1) + fibo(n - 2)
+
+lst = [fibo(i) for i in range(1,n+1)]
+print(lst)
+print()
+
+# 6324 파이썬 프로그래밍 기초 파이썬의 기본 구조와 기초 문법
+# 함수 5
+list = [1,2,3,4,3,2,1]
+
+def nOtin():
+    lst = []
+    for i in list:
+        if i not in lst:
+            lst.append(i)
+    print(lst)
+    return
+
+print(list)
+nOtin()
+print()
+
+# 6325 파이썬 프로그래밍 기초 파이썬의 기본 구조와 기초 문법
+# 함수 6
+l = [2,4,6,8,10]
+
+def findlst(i):
+    if i not in l:
+        print(f'{i} => False')
+    else:
+        print(f'{i} => True')
+
+print(l)
+findlst(5)
+findlst(10)
+
+# 6326 파이썬 프로그래밍 기초 파이썬의 기본 구조와 기초 문법
+# 함수 7
+N = 5
+
+def fac(N):
+    if N <= 1:
+        return 1
+    else:
+        return N * fac(N - 1)
+
+print(fac(N))
+
+
+# 6327 파이썬 프로그래밍 기초 파이썬의 기본 구조와 기초 문법
+# 함수 8
+squ = map(int,input().split(','))
+
+def square(s):
+    return s * s
+
+for s in squ:
+    print(f'square({s}) => {square(s)}')
