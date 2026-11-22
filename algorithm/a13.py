@@ -1,11 +1,11 @@
-# 6312 파이썬 프로그래밍 기초 파이썬의 기본 구조와 기초 문법
-# 내장함수 5
-mul = 1,2,'4',3
-
-def mUlti(a,b,c,d):
-    return a,b,c,d
+def Multi(a,b,c,d):
+    if type(a) != int or type(b) != int or type(c) != int or type(d) != int:
+        raise(TypeError)
+    else:
+        return a * b * c * d
 
 try:
-    mUlti(mul)
+    print(Multi(1,2,'4',3))
 except TypeError:
     print('에러발생')
+
