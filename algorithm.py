@@ -173,3 +173,28 @@ try:
     mUlti(mul)
 except TypeError:
     print('에러발생')
+
+
+# 6313. 파이썬 프로그래밍 기초(1) 파이썬의 기본 구조와 기초 문법
+# 내장함수 6
+A = int(input())
+print(f'ASCII 65 => {chr(A)}')
+
+
+
+# 6314. 파이썬 프로그래밍 기초(1) 파이썬의 기본 구조와 기초 문법
+# 내장함수 7
+lst = [1,2,3,4,5,6,7,8,9,10]
+print(list(filter(lambda x: x % 2 == 0, lst)))
+
+
+# 6315. 파이썬 프로그래밍 기초(1) 파이썬의 기본 구조와 기초 문법
+# 내장함수 8
+lst = [1,2,3,4,5,6,7,8,9,10]
+print(list(map(lambda x: x * x, lst)))
+
+
+# 6316. 파이썬 프로그래밍 기초(1) 파이썬의 기본 구조와 기초 문법
+# 내장함수 9
+lst = [1,2,3,4,5,6,7,8,9,10]
+print(list(map(lambda x : x * x , list(filter(lambda x: x % 2 == 0 , lst)))))
