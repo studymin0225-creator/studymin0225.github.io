@@ -1,0 +1,7 @@
+# 6292. 파이썬 프로그래밍 기초 파이썬의 기본 응용
+# 자료구조 -리스트, 튜플 16
+ln = list(i for i in input().split(","))
+tn = tuple(ln)
+
+print(ln)
+print(tn)
